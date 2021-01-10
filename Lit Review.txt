@@ -1,0 +1,43 @@
+------------------------------
+Lit Review
+------------------------------
+Our sleep quality is closely tied to our mental and physical wellbeing. Poor sleep quality can lead to numerous health problems, such as obesity [1], epilepsy [2], depression and suicidal ideation [3]. Thus, it is important for us to understand what the causes of poor sleep are, and how we can address them. Predicting sleep is an important step in this direction. If certain signals are found to correlate with the quality of sleep, then we can work to see what is influencing these signals and to change them to improve sleep.
+There are two types of approaches typically seen for the topic of sleep prediction, those being: prediction of the quality of a person’s sleep based on data collected on them throughout the course of the day, and prediction of the future sleep state using data collected during sleep.
+
+The first of these approaches we will look at is predicting the quality of a person’s sleep using the data collected on them throughout the course of the day. In [4], they use sleep and sleep-related factors measured during the morning, afternoon and evening periods of the day to predict quality of sleep. In this research, they showed there is a significant correlation between sleep quality and both physical activity and exposure to light. Similarly, in [5], they used wearable sensor data collected while awake to predict sleep efficiency. These kinds of long term predictive models could be used by employers to ensure employees in key, high-risk positions are not fatigued, as studied in [6], and also could be used by medical practitioners to give recommendations to patients about how they can change their lifestyle in order to improve their sleep quality and hence, improve their general health and wellbeing.
+
+The second approach, and perhaps the more interesting one, is the prediction of a person’s sleep state based on data collected on them during that sleep session. The key to this forecasting is first being able to classify the person’s previous and current sleep states. We can then use the data on these classified sleep states to predict the future sleep states. In [6], to classify the sleep stages, they apply a convolutional neural network to multi-channel EEG time series data. They report an average of 92% accuracy across the five stages of sleep, showing that there are ways to accurately classify a person’s sleep state. Using only this kind of classification model, a patient's sleep could be monitored in a retrospective way to help diagnose various disorders such as insomnia, but for our purpose, we would use this model in conjunction with another model to forecast the person’s future sleep pattern in a more proactive fashion.
+
+Being able to forecast sleep a few minutes or hours into the future could prove very useful in certain scenarios. Three of these scenarios are in the case of hospital patients with an emphasis on dementia patients, very young children, and criminals post surgery.
+As pointed out in [8] by the UK Alzheimer's Society, people with dementia can have restless sleep and oftentimes, they can wake up in the middle of the night being quite disorientated. This disorientation can result in them doing things they shouldn’t do, like leaving the house in the middle of the night. In cases like this, some sort of warning on the person’s sleep activity would be a great help as it could give a nurse, a spouse or a carer the opportunity to intercept the person and to reassure them. Even in instances outside of the dementia case study, models like this can provide vital information to healthcare staff in hospitals, nursing homes, and elsewhere to greatly improve efficiency of resources and to improve the quality of care for patients.
+Prediction of sleep models might also be handy for parents of very young children. We think it would be beneficial to be able to forecast the sleep state of your child in order to be able to plan your day and behaviours better around this. Sometimes, parents limit their activities as they may be unsure whether their child will wake up soon. If we could predict the sleep state and even be able to project a time when the child would wake up, this would offer much more flexibility to parents and get them more in line with their child's sleep.
+There are also cases where the prediction of sleep quality is perhaps too granular and it is the binary sleep vs awake that is important. A situation we identified where this might be the case would be when criminals have a medical procedure. If a criminal gets surgery and is sleeping in their recovery, we would want to be able to inform police when that person is due to wake up so that they can be more alert to a potential escape.
+
+While these three examples are not an exhaustive list of practical applications of a sleep forecasting model, they help to illustrate the wide range of use cases such a technology could have. While there has not been too much research into this area to date, we hope to fill this research void with our work, building on from both previous works on sleep state classification and previous works on prediction of sleep quality using data collected throughout the day.
+
+
+References
+1. G Beccuti, S Pannain, Sleep and Obesity, 2011.
+DOI: 10.1097/MCO.0b013e3283479109
+
+2. B Mallow, Sleep Deprivation and Epilepsy, 2004.
+DOI: 10.1111/j.1535-7597.2004.04509.x
+
+3. D Littlewood, S Kyle, L Carter, S Peters, D Pratt, P Gooding, Short sleep duration and poor sleep quality predict next-day suicidal ideation: an ecological momentary assessment study, 2019.
+DOI: 10.1017/S0033291718001009
+
+4. K Park, S Lee, S Wang, S Kim, S Lee, S Cho, S Park, E Lee, Sleep Prediction Algorithm Based On Deep Learning Technology, 2019.
+DOI: 10.1093/sleep/zsz067.425
+
+5. A Sathyanarayana, S Joty, L Fernandez-Luque, F Ofli, J Srivastava, A Elmagarmid, T Arora, S Taheri, Sleep Quality Prediction From Wearable Data Using Deep Learning, 2016.
+DOI: 10.2196/mhealth.6562
+
+6. Sahand Hajifar, Hongyue Sun, Fadel M. Megahed, L. Allison Jones-Farmer, Ehsan Rashedi, Lora A. Cavuoto, A forecasting framework for predicting perceived fatigue: Using time series methods to forecast ratings of perceived exertion with features from wearable sensors, 2021.
+DOI: 10.1016/j.apergo.2020.103262
+
+7. M Santos, Z Cui, X Zheng, X Shao, L Cui, Automatic Sleep Stage Classification Based on Convolutional Neural Network and Fine-Grained Segments, 2018.
+DOI: 10.1155/2018/9248410
+
+8. Alzheimers Society.
+https://www.alzheimers.org.uk/about-dementia/symptoms-and-diagnosis/sleep-and-night-time-disturbance
+
